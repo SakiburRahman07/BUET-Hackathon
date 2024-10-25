@@ -1,0 +1,133 @@
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Flexbox to align the logo and the OTP form side by side */
+.otp-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Space between the logo and the form */
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* OTP form styling */
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.otp-form h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.otp-form label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+/* Align button right below the input field */
+.ok-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.ok-button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  margin: 20px 0;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Payment button styling */
+.payment-button {
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.payment-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .otp-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .otp-input {
+    width: 100%; /* Make input full width on smaller screens */
+  }
+}
+

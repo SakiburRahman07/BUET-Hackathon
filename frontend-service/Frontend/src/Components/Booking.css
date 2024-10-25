@@ -1,0 +1,66 @@
+.kapataksha-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center all child elements horizontally */
+}
+
+.App-logo {
+  margin-bottom: 20px;
+}
+
+.seat-container {
+  display: flex;
+  justify-content: space-around;
+  /* Align headings in a single line with space between them */
+  width: 100%;
+  /* Take the full width of the container */
+  margin-bottom: 20px;
+}
+
+.seat-section {
+  margin-bottom: 0;
+  /* Remove margin since we're aligning them horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center the text in the seat sections */
+}
+
+.ticket-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center all form elements */
+}
+
+input[type="number"] {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.confirmation-message {
+  color: green;
+  font-weight: bold;
+}
